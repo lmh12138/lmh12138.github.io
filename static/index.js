@@ -345,7 +345,7 @@ function shareText(score) {
     if (score <= 99) return '你所热爱的就是你的生活';
     if (score <= 149) return '你就是手瞄大师？';
     if (score <= 199) return '今年冠军就是你辣';
-    return '人？';
+    return '不要开挂啊喂！！！';
 }
 
 function toStr(obj) {
