@@ -43,6 +43,7 @@ function init() {
     btn.className = 'btn btn-primary btn-lg';
     btn.onclick = function () {
         closeWelcomeLayer();
+        createjs.Sound.play("begin");
     }
 }
 
@@ -112,6 +113,10 @@ function gameInit() {
     createjs.Sound.registerSound({
         src: "./static/music/tap.mp3",
         id: "tap"
+    });
+    createjs.Sound.registerSound({
+        src: "./static/music/1.mp3",
+        id: "begin"
     });
     gameRestart();
 }
@@ -414,3 +419,14 @@ document.onkeydown = function (e) {
         return false
     }
 };
+
+function myaudioplay() {
+    var myaudio = document.getElementById("vd");
+    myaudio.play();
+}
+
+function myaudiodisplay() {
+    var myaudio = document.getElementById("vd");
+    audio.pause();
+    audio.currentTime = 0;
+}
