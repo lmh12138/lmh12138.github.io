@@ -43,7 +43,6 @@ function init() {
     btn.className = 'btn btn-primary btn-lg';
     btn.onclick = function () {
         closeWelcomeLayer();
-        createjs.Sound.play("begin");
     }
 }
 
@@ -113,10 +112,6 @@ function gameInit() {
     createjs.Sound.registerSound({
         src: "./static/music/tap.mp3",
         id: "tap"
-    });
-    createjs.Sound.registerSound({
-        src: "./static/music/1.mp3",
-        id: "begin"
     });
     gameRestart();
 }
